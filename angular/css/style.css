@@ -53,7 +53,7 @@ nav {
 }
 main {
   flex-grow: 1;
-  background-color: white;
+  background-color: #7C25F8;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -76,6 +76,11 @@ aside {
   flex-basis: 10px;
   background-color: #7C25F8;
   font-family: inherit;
+}
+iframe {
+  view: coverart;
+  height: 300px;
+  width: 300px;
 }
 @media screen and (max-width: 900px){
   main{
@@ -105,5 +110,10 @@ aside {
     float: none;
     width: 10px;
     flex-grow: 1;
+  }
+  iframe {
+    view: list;
+    height: 80px;
+    width: 200px;
   }
 }

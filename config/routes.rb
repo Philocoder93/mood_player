@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root :to => 'moods#index'
 
+  get "/songs/get_song" => 'songs#get_song'
+
   resources :moods, :only =>[:index, :show] do
     resources :songs, :only =>[:index, :show]
   end
