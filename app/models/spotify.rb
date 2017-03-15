@@ -7,7 +7,7 @@ class Spotify
     @artist = artist
     @track = track
 
-    url =("https://api.spotify.com/v1/search?q=" + track + "&type=track")
+    url =("https://api.spotify.com/v1/search?q="+track+"&type=track"+"&artist="+artist)
 
     response = HTTParty.get(url).parsed_response
 

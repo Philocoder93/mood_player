@@ -13,8 +13,7 @@ class MoodsController < ApplicationController
   end
 
   def save_mood
-
-    @song = Song.create!(uri: "#{params[:uri]}", mood_id: params[:id])    
+    @song = Song.create!(uri: "#{params[:uri]}", mood_id: params[:id])
   end
 
 
