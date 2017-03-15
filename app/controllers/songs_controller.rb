@@ -14,6 +14,10 @@ class SongsController < ApplicationController
     end
   end
 
+  def get_all_songs
+    @songs = Song.find
+  end
+
   def delete
   end
 end

@@ -4,33 +4,30 @@
   angular
     .module( "moods" )
     .controller( "MoodsNewController", [
+      "$stateParams",
       "moodsFactory",
+      "songsFactory",
+      "saveFactory",
       MoodsNewControllerFunction
     ]);
 
-  function MoodsNewControllerFunction(moodsFactory){
-    this.clicked = 0
+  function MoodsNewControllerFunction($stateParams, moodsFactory, songsFactory, saveFactory){
+
+
     this.submit = function () {
 
-      let moods = moodsFactory
-      this.response = moods.get({artist: this.artist, track: this.track}, function(response){
+      let song = songsFactory
+      this.response = song.get({artist: this.artist, track: this.track}, function(response){
         console.log(response.uri)
       })
-
-
-
-
-
-
-
     }
     this.getiframe = function (id) {
        return 'https://embed.spotify.com/?uri=' + id
 
-    };
-
-    this.hello = function () {
-      console.log('hey there you made it here')
+    }
+    this.save = function (uri) {
+      let song = saveFactory
+      song.get({id: $stateParams.id, uri: uri})
     }
   }
 }());

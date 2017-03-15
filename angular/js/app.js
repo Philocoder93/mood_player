@@ -36,7 +36,7 @@
       controllerAs: "MoodsIndexVM"
     })
     .state("MoodsNew", {
-      url: "/moods/new",
+      url: "/moods/:id/new",
       templateUrl: "js/moods/new.html",
       controller: "MoodsNewController",
       controllerAs: "MoodsNewVM"

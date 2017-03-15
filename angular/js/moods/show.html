@@ -1,5 +1,12 @@
 <section>
-  <p> This is the paragraph in main (show)</p>
+  <div ng-repeat="mood in MoodsShowVM.moods | filter: { id: MoodsShowVM.id}">
+    <p>
+      {{mood.name}}
+    </p>
+    <p><a data-ui-sref="MoodsNew({id: MoodsShowVM.id})">add a song to this one</a> here it is </p>
+  </div>
+
+  </p>
 </section>
 <aside>
   <p> This is the paragraph in aside </p>
