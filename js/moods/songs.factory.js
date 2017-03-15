@@ -9,6 +9,6 @@
     ])
 
   function FactoryFunction($resource){
-    return $resource("http://localhost:3000/songs/get_all_songs.json")
+    return $resource("https://mood-player.herokuapp.com/songs/get_all_songs.json")
   }
 }());
