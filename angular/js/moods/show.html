@@ -3,6 +3,9 @@
     <p>
       {{mood.name}}
     </p>
+    <div ng-repeat="song in MoodsShowVM.songs">
+      <iframe ng-src="{{MoodsShowVM.getiframe(song.uri)}}" width="250" height="80" frameborder="0" allowtransparency="true" view="list"></iframe>
+    </div>
     <p><a data-ui-sref="MoodsNew({id: MoodsShowVM.id})">add a song to this one</a> here it is </p>
   </div>
 

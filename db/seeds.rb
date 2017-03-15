@@ -9,3 +9,6 @@
 
 Mood.create!(name: "Happy")
 Mood.create!(name: "Sad")
+Mood.create!(name: "Angry")
+Mood.create!(name: "Goofy")
+Mood.create!(name: "Chilled Out")

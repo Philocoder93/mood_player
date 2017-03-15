@@ -78,9 +78,9 @@ aside {
   font-family: inherit;
 }
 iframe {
-  view: coverart;
-  height: 300px;
-  width: 300px;
+
+  height: 80px;
+  width: 200px;
 }
 @media screen and (max-width: 900px){
   main{

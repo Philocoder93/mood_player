@@ -6,17 +6,17 @@
     .controller( "MoodsNewController", [
       "$stateParams",
       "moodsFactory",
-      "songsFactory",
+      "get_songFactory",
       "saveFactory",
       MoodsNewControllerFunction
     ]);
 
-  function MoodsNewControllerFunction($stateParams, moodsFactory, songsFactory, saveFactory){
+  function MoodsNewControllerFunction($stateParams, moodsFactory, get_songFactory, saveFactory){
 
 
     this.submit = function () {
 
-      let song = songsFactory
+      let song = get_songFactory
       this.response = song.get({artist: this.artist, track: this.track}, function(response){
         console.log(response.uri)
       })

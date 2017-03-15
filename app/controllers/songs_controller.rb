@@ -15,7 +15,11 @@ class SongsController < ApplicationController
   end
 
   def get_all_songs
-    @songs = Song.find
+    @songs = Song.where(mood_id: params[:id])
+    respond_to do |format|
+      format.json { render json: @songs }
+      format.html { render :show}
+    end
   end
 
   def delete
