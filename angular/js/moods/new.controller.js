@@ -16,7 +16,7 @@
 
     this.submit = function () {
 
-      let song = get_songFactory
+      var song = get_songFactory
       this.response = song.get({artist: this.artist, track: this.track}, function(response){
         console.log(response.uri)
       })
@@ -26,7 +26,7 @@
 
     }
     this.save = function (uri) {
-      let song = saveFactory
+      var song = saveFactory
       song.get({id: $stateParams.id, uri: uri})
     }
   }

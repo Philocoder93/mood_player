@@ -11,7 +11,7 @@
 
   function MoodsIndexControllerFunction(moodsFactory, songsFactory){
     this.moods = moodsFactory.query()
-    let x = this.moods
+    var x = this.moods
     console.log(x.songs)
 
   }

@@ -14,7 +14,7 @@
     this.moods = moodsFactory.query()
     this.id = $stateParams.id
 
-    let songs = songsFactory
+    var songs = songsFactory
     this.songs = songs.query({id: this.id})
 
     console.log(this.songs)
