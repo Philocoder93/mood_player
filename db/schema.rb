@@ -22,16 +22,10 @@ ActiveRecord::Schema.define(version: 20170312164503) do
   end
 
   create_table "songs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "artist"
-    t.string   "album"
-    t.string   "album_url"
     t.string   "uri"
-    t.string   "song_length"
-    t.string   "votes"
     t.integer  "mood_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["mood_id"], name: "index_songs_on_mood_id", using: :btree
   end
 

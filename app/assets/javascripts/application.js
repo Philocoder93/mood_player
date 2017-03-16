@@ -21,10 +21,10 @@ $(document).ready(() => {
   $(".get").on("click", () => {
     console.log(" GET Worked");
 
-    let artist = $(".artist").val();
-    let track = $(".track").val();
+    var artist = $(".artist").val();
+    var track = $(".track").val();
 
-    let url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist+"&limit=3";
+    var url =  "https://api.spotify.com/v1/search?q="+track+"&type=track&artist="+artist+"&limit=3";
 
 
     $.ajax({
@@ -35,7 +35,7 @@ $(document).ready(() => {
       console.log(response);
 
 
-        // for(let i =0; i < 3; i++){
+        // for(var i =0; i < 3; i++){
         //   // console.log("UI " + artist);
         //   // console.log(response.tracks.items[i].artists[0].name);
         //   if(artist === response.tracks.items[i].artists[0].name){ console.log("FOUND");}

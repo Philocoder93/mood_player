@@ -10,7 +10,7 @@
 
   function NavFunction($state) {
     this.update = function () {
-      let state = $state
+      var state = $state
       this.state = state
     }
     this.update();

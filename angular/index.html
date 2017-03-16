@@ -13,6 +13,9 @@
     <script src="js/nav/nav.controller.js"></script>
     <script src="js/moods/moods.js"></script>
     <script src="js/moods/moods.factory.js"></script>
+    <script src="js/moods/save.factory.js"></script>
+    <script src="js/moods/songs.factory.js"></script>
+    <script src="js/moods/get_song.factory.js"></script>
     <script src="js/moods/welcome.controller.js"></script>
     <script src="js/moods/index.controller.js"></script>
     <script src="js/moods/new.controller.js"></script>
@@ -27,8 +30,8 @@
       <nav ng-controller="nav as vm">
       <a class="navlink" ng-hide="vm.state.current.url=='/moods/welcome'" data-ui-sref="MoodsWelcome"><span>Welcome</span></a>
       <a class="navlink" ng-hide="vm.state.current.url=='/moods/index'" data-ui-sref="MoodsIndex"><span>Index</span></a>
-      <a class="navlink" ng-hide="vm.state.current.url=='/moods/new'" data-ui-sref="MoodsNew"><span>New</span></a>
-      <a class="navlink" ng-hide="vm.state.current.url=='/moods/generate'" data-ui-sref="MoodsGenerate"><span>Generate</span></a>
+      <!-- <a class="navlink" ng-hide="vm.state.current.url=='/moods/new'" data-ui-sref="MoodsNew"><span>New</span></a> -->
+      <!-- <a class="navlink" ng-hide="vm.state.current.url=='/moods/generate'" data-ui-sref="MoodsGenerate"><span>Generate</span></a> -->
       </nav>
     </header>
     <main class='viewWrapper' data-ui-view></main>

@@ -9,6 +9,6 @@
 
 Mood.create!(name: "Happy")
 Mood.create!(name: "Sad")
-
-Song.create!(title: "Mr. Brightside", artist: "The Killers", album: "Hot Fuss", album_url: "https://i.scdn.co/image/ac68a9e4a867ec3ce8249cd90a2d7c73755fb487", uri: "spotify:track:7oK9VyNzrYvRFo7nQEYkWN", song_length: 222200, votes: 0, mood_id: 1)
-Song.create!(title: "Middle", artist: "DJ Snake", album: "Encore", album_url: "https://i.scdn.co/image/5acb2a5b069c2f14f6e7efd5daa9bd340131ca47", uri: "spotify:track:0g5EKLgdKvNlln7TNqBByK", song_length: 220573, votes: 0, mood_id: 1)
+Mood.create!(name: "Angry")
+Mood.create!(name: "Goofy")
+Mood.create!(name: "Chilled Out")
