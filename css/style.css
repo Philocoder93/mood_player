@@ -9,7 +9,7 @@ body {
 }
 header, footer {
   height: 100px;
-  background-color: #232323;
+  background-color: #232323 !important;
   font-family: inherit;
 }
 nav {
@@ -21,8 +21,8 @@ nav {
   height: inherit;
   float: right;
   width: 100px;
-  background-color: #232323;
-  color: #1DB954;
+  background-color: #232323 !important;
+  color: #1DB954 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,8 @@ nav {
   font-family: inherit;
 }
 .navlink:hover {
-  background-color: #1DB954;
-  color: #232323;
+  background-color: #1DB954 !important;
+  color: #232323 !important;
 }
 .navlink > span {
   display: block;
@@ -49,12 +49,12 @@ nav {
 .title > h1 {
   display: block;
   padding: 0 30px;
-  color: #1DB954;
+  color: #1DB954 !important;
   font-family: inherit;
 }
 main {
   flex-grow: 1;
-  background-color: #7C25F8;
+  background-color: #7C25F8 !important;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -65,16 +65,14 @@ section {
   width: 10px;
   flex-grow: 2;
   flex-basis: 10px;
-  background-color: #7C25F8;
+  background-color: #7C25F8 !important;
   font-family: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white !important;
-}
-section:link {
-  color: white !important;
+
 }
 aside {
   width: 10px;
@@ -83,9 +81,10 @@ aside {
   background-color: #7C25F8;
   font-family: inherit;
   color: white !important;
+
 }
-aside:link {
-  color: white !important;
+a {
+  color: white;
 }
 iframe {
 
