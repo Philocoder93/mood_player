@@ -5,6 +5,7 @@ body {
   justify-content: space-between;
   align-items: stretch;
   font-family: 'Helvetica', sans-serif;
+  color: white !important;
 }
 header, footer {
   height: 100px;
