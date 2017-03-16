@@ -73,12 +73,18 @@ section {
   align-items: center;
   color: white !important;
 }
+section:link {
+  color: white !important;
+}
 aside {
   width: 10px;
   flex-grow: 1;
   flex-basis: 10px;
   background-color: #7C25F8;
   font-family: inherit;
+  color: white !important;
+}
+aside:link {
   color: white !important;
 }
 iframe {
