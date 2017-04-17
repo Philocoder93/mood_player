@@ -1,0 +1,6 @@
+<section>
+  <article class="mood" ng-repeat="mood in MoodsIndexVM.moods">
+    <p> {{mood.name}} </p>
+    <a data-ui-sref="MoodsShow({id: mood.id})"><span>Check out this mood more closely</span></a>
+  </article>
+</section>

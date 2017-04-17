@@ -1,0 +1,11 @@
+<section>
+  <article class="mood-inspect" ng-repeat="mood in MoodsShowVM.moods | filter: { id: MoodsShowVM.id}">
+    <h1>
+      {{mood.name}}
+    </h1>
+    <div ng-repeat="song in MoodsShowVM.songs">
+      <iframe ng-src="{{MoodsShowVM.getiframe(song.uri)}}" width="250" height="80" frameborder="0" allowtransparency="true" view="list"></iframe>
+    </div>
+    <a data-ui-sref="MoodsNew({id: MoodsShowVM.id})"><span>add a song to this one</span></a>
+  </article>
+</section>
