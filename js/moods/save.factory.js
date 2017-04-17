@@ -9,6 +9,6 @@
     ])
 
   function FactoryFunction($resource){
-    return $resource("http://localhost:3000/moods/save_mood.json")
+    return $resource("https://mood-player.herokuapp.com/moods/save_mood.json")
   }
 }());
