@@ -82,6 +82,55 @@ iframe {
   height: 80px;
   width: 200px;
 }
+.mood {
+  min-width: 300px;
+  min-height: 100px;
+  background-color: #9BF0E1;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mood * {
+  text-decoration: none;
+  color: black;
+}
+.mood a {
+  display: block;
+  min-width: inherit;
+  min-height: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.mood span {
+  display: block;
+}
+.mood-inspect {
+  min-width: 200px;
+  background-color: #9BF0E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mood-inspect iframe {
+  margin: 15px;
+  margin-bottom: 0px;
+}
+.mood-inspect a {
+  min-width: inherit;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+}
+.mood-inspect span {
+  text-decoration: none !important;
+  color: black;
+}
 @media screen and (max-width: 900px){
   main{
     flex-direction: column !important;

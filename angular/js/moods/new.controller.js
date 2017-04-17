@@ -4,6 +4,7 @@
   angular
     .module( "moods" )
     .controller( "MoodsNewController", [
+      "$location",
       "$stateParams",
       "moodsFactory",
       "get_songFactory",
@@ -11,7 +12,7 @@
       MoodsNewControllerFunction
     ]);
 
-  function MoodsNewControllerFunction($stateParams, moodsFactory, get_songFactory, saveFactory){
+  function MoodsNewControllerFunction($location,$stateParams, moodsFactory, get_songFactory, saveFactory){
 
 
     this.submit = function () {
@@ -28,6 +29,7 @@
     this.save = function (uri) {
       var song = saveFactory
       song.get({id: $stateParams.id, uri: uri})
+      $location.path("/moods/"+$stateParams.id.toString()+"/show")
     }
   }
 }());
